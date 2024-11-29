@@ -11,17 +11,7 @@
     <link rel="stylesheet" href="css/video.css">
 </head>
 <body>
-    <!-- Side Navbar Start -->
-    <div class="sidenav">
-        <a href="index.html">Home</a>
-        <a href="Hindivideo.html">Hindi-videos</a>
-        <a href="Englishvideo.html">English-videos</a>
-        <a href="Mathvideo.html">Maths-videos</a>
-        <a href="Story.html">Story's-videos</a>
-        <a href="Art.html">Art & Craft -videos</a>
-        <a href="#">Library</a>
-    </div>
-    <!-- Side Navbar End -->
+   
 
     <!-- Main Content Start -->
     <div class="main-content">
@@ -42,34 +32,48 @@
             </div>
         </nav>
         <!-- Navbar End -->
-    <section class="video-banner">
-        <h1>GK Video Gallery</h1>
-    </section>
-    <div class="video-grid" id="videoGrid"></div>
-
-    <!-- Video Modal -->
-    <div class="video-modal" id="videoModal">
-        <div class="video-container">
-            <button class="video-close" onclick="closeVideo()">✖</button>
-            <video controls id="videoPlayer">
-                <source src="" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </div>
-
-
-    <footer class="footer">
-        <div class="container text-center py-4">
-            <p>&copy; 2024 Computer Guru. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#" class="fab fa-facebook"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
+    <section class="mybody">
+        <div>
+            <div class="sidenav">
+                <a href="index.html">Home</a>
+                <a href="Hindivideo.html">Hindi-videos</a>
+                <a href="Englishvideo.html">English-videos</a>
+                <a href="GK.html">GK-videos</a>
+                <a href="Story.html">Story's-videos</a>
+                <a href="Art.html">Art & Craft -videos</a>
+                <a href="#">Library</a>
             </div>
         </div>
-    </footer>
+        <div class="video-box">
+            <section class="video-banner">
+                <h1>GK Video Gallery</h1>
+            </section>
+            <div class="video-grid" id="videoGrid"></div>
+        
+            <!-- Video Modal -->
+            <div class="video-modal" id="videoModal">
+                <div class="video-container">
+                    <button class="video-close" onclick="closeVideo()">✖</button>
+                    <video controls id="videoPlayer">
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
+<footer class="footer">
+    <div class="container text-center py-4">
+        <p>&copy; 2024 Computer Guru. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    </div>
+</footer>
     <script src="js/Hindidata.js"></script>
     <script>
         const videoGrid = document.getElementById('videoGrid');
