@@ -1,9 +1,39 @@
-  /* Same styles as before for the video grid */
-  body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    display: flex; /* Allows side navbar and main content to sit side by side */
+}
+
+.sidenav {
+    height: 100%; /* Full-height */
+    width: 250px; /* Set the width of the side navbar */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0; /* Stay at the top */
+    left: 0; /* Align to the left */
+    background-color: #f8f9fa; /* Light background color */
+    border-right: 1px solid #ddd; /* Optional: add a border for separation */
+    padding-top: 20px; /* Space from the top */
+}
+.sidenav a {
+    padding: 10px 15px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    color: #333; /* Dark text color */
+    display: block; /* Make links appear as blocks */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.sidenav a:hover {
+    background-color: #e2e6ea; /* Light grey background on hover */
+    color: #007bff; /* Change text color on hover */
+}
+.main-content {
+    margin-left: 260px; /* Leave space for the sidenav */
+    padding: 20px; /* Add padding for the main content */
+    flex-grow: 1; /* Allow main content to take the remaining width */
 }
 
 h1 {
@@ -19,6 +49,8 @@ h1 {
     max-width: 1200px;
     margin: auto;
 }
+
+/* Rest of your existing CSS styles... */
 
 .video-card {
     background: #fff;
@@ -161,3 +193,4 @@ transition: color 0.3s;
 .footer .social-icons a:hover {
 color: #ffcccb;
 }
+
